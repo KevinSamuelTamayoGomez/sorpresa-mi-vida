@@ -23,7 +23,11 @@
     <main class="episode" data-scene="portada">
       <div class="art">
         <img class="orchard" src="assets/atardecer.webp" width="1536" height="1024" alt="Un gatito naranja duerme bajo un duraznero al atardecer.">
-        <img class="cat" src="assets/gato.webp" width="1536" height="1024" alt="El gato naranja mira indignado con un durazno entre las patas." hidden>
+        <div class="cat" role="img" aria-label="El gato naranja pasa de indignado a triste y se queda mirando la lluvia por la ventana." hidden>
+          <img class="cat-window" src="assets/gato-triste.webp" width="1536" height="1024" alt="">
+          <img class="cat-turn" src="assets/gato-giro.webp" width="1536" height="1024" alt="">
+          <img class="cat-start" src="assets/gato.webp" width="1536" height="1024" alt="">
+        </div>
         <div class="leaves" aria-hidden="true"></div>
         <div class="art-border" aria-hidden="true"></div>
         <span class="art-caption" aria-hidden="true"><span>✦</span> Bajo el duraznero</span>
@@ -58,9 +62,8 @@
         </section>
 
         <section id="no" class="scene" hidden>
-          <p class="eyebrow">Interrupción del gato</p>
           <h2 tabindex="-1">¿¡Cómo que no!?</h2>
-          <p class="copy">¡Yo hasta traje el durazno!</p>
+          <p class="copy">Ah ok... Me voy a mirar por la ventana mientras llueve...</p>
           <div class="actions">
             <button type="button" class="secondary" data-go="pregunta"><span aria-hidden="true">↩</span> Volver a la pregunta</button>
           </div>
