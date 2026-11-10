@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8efe8">
+  <meta name="description" content="Un pequeño episodio sobre nosotros.">
+  <title>El capítulo del 9 de mayo</title>
+  <link rel="icon" href="assets/durazno.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="historia.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <div class="brand">
+        <img src="assets/durazno.svg" width="34" height="34" alt="">
+        <span>Una historia de nosotros</span>
+      </div>
+      <span class="dedication">Para Vanellope <span aria-hidden="true">♡</span></span>
+    </header>
+
+    <main class="episode" data-scene="portada">
+      <div class="art">
+        <img class="orchard" src="assets/atardecer.webp" width="1536" height="1024" alt="Un gatito naranja duerme bajo un duraznero al atardecer.">
+        <img class="cat" src="assets/gato.webp" width="1536" height="1024" alt="El gato naranja mira indignado con un durazno entre las patas." hidden>
+        <div class="leaves" aria-hidden="true"></div>
+        <div class="art-border" aria-hidden="true"></div>
+        <span class="art-caption" aria-hidden="true"><span>✦</span> Bajo el duraznero</span>
+      </div>
+
+      <div class="story">
+        <section id="portada" class="scene">
+          <p class="eyebrow">Un episodio especial</p>
+          <h1 tabindex="-1">El capítulo del <em>9 de mayo</em></h1>
+          <p class="copy">Muñequita, hice algo para ti.</p>
+          <div class="actions">
+            <button type="button" class="primary" data-go="recuerdo">Ver el episodio <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </section>
+
+        <section id="recuerdo" class="scene" hidden>
+          <p class="eyebrow">Así empezó lo nuestro</p>
+          <h2 tabindex="-1">9 de mayo <em>de 2026</em></h2>
+          <p class="copy">Desde ese día empezó lo nuestro. Y sí, ya nos tratamos como novios, pero todavía me hace ilusión preguntártelo.</p>
+          <div class="actions">
+            <button type="button" class="primary" data-go="pregunta">Siguiente <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </section>
+
+        <section id="pregunta" class="scene" hidden>
+          <p class="eyebrow">Lo que quería preguntarte</p>
+          <h2 tabindex="-1">Vanellope, <em>¿quieres ser mi novia?</em></h2>
+          <div class="actions choices">
+            <button type="button" class="primary" data-go="si">Sí <span aria-hidden="true">♡</span></button>
+            <button type="button" class="secondary" data-go="no">No</button>
+          </div>
+        </section>
+
+        <section id="no" class="scene" hidden>
+          <p class="eyebrow">Interrupción del gato</p>
+          <h2 tabindex="-1">¿¡Cómo que no!?</h2>
+          <p class="copy">¡Yo hasta traje el durazno!</p>
+          <div class="actions">
+            <button type="button" class="secondary" data-go="pregunta"><span aria-hidden="true">↩</span> Volver a la pregunta</button>
+          </div>
+        </section>
+
+        <section id="si" class="scene" hidden>
+          <p class="eyebrow">Nuestro siguiente capítulo</p>
+          <h2 tabindex="-1">Ahora sí, <em>oficialmente.</em></h2>
+          <p class="copy">Juntos desde el 9 de mayo. <span aria-hidden="true">🍑</span></p>
+          <div class="actions">
+            <button type="button" class="primary" data-go="carta"><span aria-hidden="true">✉</span> Ver escena poscréditos</button>
+          </div>
+        </section>
+
+        <!-- Puedes personalizar la carta cambiando el párrafo y la despedida. -->
+        <section id="carta" class="scene letter" hidden>
+          <p class="eyebrow">Escena poscréditos</p>
+          <h2 tabindex="-1">Para ti, <em>muñequita.</em></h2>
+          <p class="copy">Me gusta lo que hemos construido desde el 9 de mayo. Hice esto porque me hacía ilusión preguntártelo de una forma que te hiciera sonreír. Me emociona seguir compartiendo días contigo.</p>
+          <p class="signoff">Te quiero, muñequita. ♡</p>
+          <div class="actions">
+            <button type="button" class="secondary" data-go="portada"><span aria-hidden="true">↺</span> Volver a ver</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="credits">
+      <time datetime="2026-05-09">Desde el 9 de mayo de 2026</time>
+      <span class="credits-line" aria-hidden="true"></span>
+      <div class="progress" aria-label="Progreso del episodio">
+        <span data-step="1" class="dot" aria-current="step"><span class="sr-only">Inicio</span></span>
+        <span data-step="2" class="dot"><span class="sr-only">La pregunta</span></span>
+        <span data-step="3" class="dot"><span class="sr-only">Final</span></span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
